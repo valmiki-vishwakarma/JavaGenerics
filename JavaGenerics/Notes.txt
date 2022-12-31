@@ -1,0 +1,28 @@
+Need of Generics in Java
+We need to create different classes for different data types
+Without generics,it throws ClassCastException at run time not at compile time
+
+So, we create a generic class with type as T 
+so that it works fine for all the data types
+
+T==>It is not mandatory to use T only
+Instead of T, we can use any random java identifier or name like A,B,C or Steve etc
+
+But T is the standard practise 
+Generic is used to parametrize the class as <T>
+We can parametrize generic class or interface or methods
+=====================================================================
+Generics in Java
+
+In Java SE7 and later, you can replace the type arguments required to invoke 
+the constructor of a generic class with an empty <> set of type argument as below
+
+//String 
+StoreAnyValueWithGenerics<String> s3=new StoreAnyValueWithGenerics<>("Steve");
+String val3=s3.getValue();
+System.out.println(val3);
+		
+
+
+
+
